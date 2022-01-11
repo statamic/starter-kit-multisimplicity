@@ -3,6 +3,8 @@
 > A Multilingual focused Starter Kit for Statamic 3
 <!-- /statamic:hide -->
 
+## Overview
+
 This kit is designed to be a starting (or learning) point for building simple and effective multilingual sites using Statamic's [Multi-site](https://statamic.dev/multi-site) feature.
 
 **Note: multi-site requires Statamic Pro.**
