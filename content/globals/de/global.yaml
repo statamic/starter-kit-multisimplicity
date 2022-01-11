@@ -1,0 +1,4 @@
+origin: en
+location: 'Laternenabfall, Narnia'
+copyright: 'Urheberrechte &copy; {{ now format="Y" }} {{ site:name }} — Alle Rechte vorbehalten'
+submit_text: Senden

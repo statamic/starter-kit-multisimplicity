@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/starter-kit-multisimplicity",
+    "extra": {
+        "statamic": {
+            "name": "Starter Kit Multisimplicity",
+            "description": "Starter Kit Multisimplicity starter kit"
+        }
+    }
+}

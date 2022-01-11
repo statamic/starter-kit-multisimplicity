@@ -1,0 +1,32 @@
+<div class="content mb-16 max-w-xl mx-auto px-4">
+{{ form:contact_us class="p-8 bg-white shadow-lg" }}
+    {{ if success }}
+        <h2 class="text-green-600 mb-0 pb-0 text-center">
+            {{ success }}
+        </div>
+    {{ else }}
+        {{ if errors }}
+            <div class="bg-red-300 text-white p-2">
+                {{ errors }}
+                    {{ value }}<br>
+                {{ /errors }}
+            </div>
+        {{ /if }}
+
+        {{ fields }}
+            <div class="mb-8">
+                <label class="mb-1 text-2xl">{{ display }}</label>
+                <div class="">{{ field }}</div>
+                {{ if error }}
+                    <p class="text-red-600">{{ error }}</p>
+                {{ /if }}
+            </div>
+        {{ /fields }}
+
+        <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+
+        <button type="submit" class="button">{{ submit_text }}</button>
+    {{ /if }}
+
+{{ /form:contact_us }}
+</div>

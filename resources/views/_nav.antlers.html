@@ -1,0 +1,21 @@
+<header class="">
+    <nav class="fixed w-full top-0 inset-x-0 bg-zinc-50">
+        <div class="max-w-3xl mx-auto px-4 flex justify-between">
+            <div class="border border-t-0 bg-white flex divide-x h-[0%]">
+                {{ locales current_first="false" }}
+                <a class="px-3 py-2 uppercase hover:bg-zinc-100 hover:text-black {{ is_current ?= 'bg-zinc-100 text-black' }}" href="{{ url }}">{{ locale:handle }}</a>
+                {{ /locales }}
+            </div>
+            <a href="{{ header_link:url }}" class="button">{{ header_link:title }}</a>
+        </div>
+    </nav>
+    <nav class="max-w-3xl mx-auto px-4 text-center py-4 mt-12">
+        <h1><a href="{{ homepage }}" class="text-4xl tracking-wide font-sans uppercase">{{ site:name }}</a></h1>
+        <p class="text-xl font-medium italic">{{ location }}</p>
+        <ul class="flex flex-wrap justify-center py-2 my-8 border-b border-t space-x-2 font-medium tracking-wider italic uppercase">
+            {{ nav }}
+                <li><a class="px-2 py-1 hover:text-black block {{ is_current ?= 'font-bold text-black' }}" href="{{ url }}">{{ title }}</a></li>
+            {{ /nav }}
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,5 @@
+<div class="mb-16 grid {{ columns | count > 2 ? 'max-w-5xl md:grid-cols-3' : 'max-w-3xl md:grid-cols-2' }} content mx-auto px-4 gap-8">
+    {{ columns }}
+        <div>{{ text }}</div>
+    {{ /columns }}
+</div>

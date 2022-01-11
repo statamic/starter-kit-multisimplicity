@@ -1,0 +1,6 @@
+<div class="flex flex-col md:flex-row items-center content mb-24 max-w-3xl mx-auto px-4">
+    <img src="{{ image }}" class="md:w-1/2 {{ (index | mod:2 === 0) ?= 'md:order-last' }}" alt="{{ image:alt }}">
+    <div class="md:w-1/2 {{ (index | mod:2 === 0) ? 'md:pr-6' : 'md:pl-6' }}">
+        {{ text }}
+    </div>
+</div>

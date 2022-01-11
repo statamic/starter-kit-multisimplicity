@@ -1,0 +1,4 @@
+origin: en
+location: 'Déchets de lanternes, Narnia'
+copyright: 'Droits d''auteur &copy; {{ now format="Y" }} {{ site:name }} —  Tous les droits sont réservés'
+submit_text: Soumettre

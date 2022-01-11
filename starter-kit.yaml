@@ -1,0 +1,16 @@
+export_paths:
+  - content
+  - config/statamic/sites.php
+  - resources/blueprints
+  - resources/forms
+  - resources/css
+  - resources/views
+  - public/assets
+  - public/css
+  - package.json
+  - tailwind.config.js
+  - webpack.mix.js
+  - .env.example
+  - README.md
+dependencies:
+  statamic/ssg: ^0.9.0

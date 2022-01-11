@@ -1,0 +1,5 @@
+site_name: 'The Getaway'
+location: 'Lantern Waste, Narnia'
+copyright: 'Copyright &copy; {{ now format="Y" }} {{ site:name }} — All Rights Reserved'
+header_link: e98cd6bb-f122-4bb2-b658-3e0a83aa06fb
+submit_text: Submit

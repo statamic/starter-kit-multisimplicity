@@ -1,0 +1,19 @@
+<h1 class="text-6xl mb-12 text-center italic uppercase font-light tracking-widest antialiased">{{ title }}</h1>
+
+{{ content_blocks }}
+    {{ partial :src="type" }}
+{{ /content_blocks }}
+
+<div class="max-w-3xl content mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-4">
+        {{ collection:events sort="date:asc" }}
+            <a href="{{ url }}" class="flex items-center border bg-white border-indigo-800 group hover:border-black">
+                <div class="bg-indigo-800 group-hover:bg-black text-white w-14 text-center py-2 mr-8">
+                    <div class="text-xs tracking-wide uppercase text-indigo-200 leading-none">{{ date format="M" }}</div>
+                    <div class="text-4xl leading-none">{{ date format="j" }}</div>
+                </div>
+                <h3 class="m-0 group-hover:text-black">{{ title }}</h3>
+            </a>
+        {{ /collection:events }}
+    </div>
+</div>

@@ -1,0 +1,211 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          localizable: true
+      -
+        handle: content_blocks
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          container: assets
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: true
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Content Blocks'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          localizable: true
+          sets:
+            image_and_text:
+              display: 'Image & Text'
+              fields:
+                -
+                  handle: image
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: Image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: text
+                  field:
+                    always_show_set_button: false
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                    save_html: false
+                    toolbar_mode: floating
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    display: Text
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+            photo_gallery:
+              display: 'Photo Gallery'
+              fields:
+                -
+                  handle: images
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: Images
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: width
+                  field:
+                    options:
+                      max-w-3xl: Normal
+                      max-w-5xl: 'Extra Wide'
+                    inline: true
+                    cast_booleans: false
+                    default: max-w-3xl
+                    display: Width
+                    type: radio
+                    icon: radio
+                    listable: hidden
+                    instructions_position: above
+            columns:
+              display: Columns
+              fields:
+                -
+                  handle: columns
+                  field:
+                    fields:
+                      -
+                        handle: text
+                        field:
+                          always_show_set_button: false
+                          buttons:
+                            - h2
+                            - h3
+                            - bold
+                            - italic
+                            - unorderedlist
+                            - orderedlist
+                            - removeformat
+                            - quote
+                            - anchor
+                            - image
+                          save_html: false
+                          toolbar_mode: floating
+                          link_noopener: false
+                          link_noreferrer: false
+                          target_blank: false
+                          reading_time: false
+                          fullscreen: true
+                          allow_source: true
+                          enable_input_rules: true
+                          enable_paste_rules: true
+                          antlers: false
+                          display: Text
+                          type: bard
+                          icon: bard
+                          listable: hidden
+                          instructions_position: above
+                    mode: table
+                    max_rows: 3
+                    reorderable: true
+                    display: Columns
+                    type: grid
+                    icon: grid
+                    instructions: 'Each row will become a column, stacked side-by-side when there''s enough room.'
+                    listable: hidden
+                    instructions_position: above
+            form:
+              display: Form
+              fields:
+                -
+                  handle: form
+                  field:
+                    max_items: 1
+                    display: Form
+                    type: form
+                    icon: form
+                    listable: hidden
+                    instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo

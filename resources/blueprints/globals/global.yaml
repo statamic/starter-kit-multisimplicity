@@ -1,0 +1,63 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: site_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Site Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          localizable: true
+      -
+        handle: location
+        field:
+          input_type: text
+          antlers: false
+          display: Location
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          localizable: true
+      -
+        handle: copyright
+        field:
+          input_type: text
+          antlers: true
+          display: Copyright
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          localizable: true
+      -
+        handle: header_link
+        field:
+          max_items: 1
+          mode: default
+          create: false
+          collections:
+            - pages
+          display: 'Header Link'
+          type: entries
+          icon: entries
+          instructions: 'Control the header CTA link button'
+          localizable: true
+          listable: hidden
+          instructions_position: above
+      -
+        handle: submit_text
+        field:
+          input_type: text
+          antlers: false
+          display: 'Submit Text'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          localizable: true

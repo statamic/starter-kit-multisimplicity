@@ -1,0 +1,44 @@
+{{ section:head }}
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+{{ /section:head }}
+
+<div x-data="{ open: false, url: '', caption: '' }" class="{{ width }} mx-auto px-4">
+    {{# Thumbnails #}}
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-24">
+        {{ images }}
+            <button x-on:click="open = true; url = '{{ url }}'; caption = '{{ alt }}'" type="button" class="cursor-pointer group" role="button" aria-label="View full image">
+                <img src="{{ glide:url square="600" format="webp" }}" alt="{{ alt }}" class="p-1 border group-hover:border-zinc-400" height="300" width="300">
+            </button>
+        {{ /images }}
+    </div>
+
+    {{# Modal #}}
+    <div
+        x-show="open"
+        x-on:keydown.escape.prevent.stop="open = false"
+        role="dialog"
+        aria-modal="true"
+        class="fixed inset-0 overflow-y-auto"
+        x-cloak
+    >
+        {{# Overlay #}}
+        <div x-show="open" x-transition.opacity class="fixed inset-0 bg-zinc-900 bg-opacity-50"></div>
+
+        {{# Panel #}}
+        <div
+            x-show="open" x-transition
+            x-on:click="open = false"
+            class="relative min-h-screen flex items-center justify-center p-4"
+        >
+            <div
+                x-on:click.stop
+                x-trap.noscroll.inert="open"
+                class="relative max-w-3xl w-full bg-white border border-zinc-800 p-4 overflow-y-auto"
+            >
+                {{# Content #}}
+                <p class="mb-2 text-center italic text-2xl" x-text="caption"></p>
+                <img :src="url" :alt="caption">
+            </div>
+        </div>
+    </div>
+</div>
