@@ -1,5 +1,5 @@
 {
-    "name": "my-vendor-name/starter-kit-multisimplicity",
+    "name": "statamic/starter-kit-multisimplicity",
     "extra": {
         "statamic": {
             "name": "Starter Kit Multisimplicity",
