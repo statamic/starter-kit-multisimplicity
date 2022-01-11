@@ -1,7 +1,9 @@
 export_paths:
   - content
+  - config/statamic/editions.php
   - config/statamic/sites.php
   - resources/blueprints
+  - resources/fieldsets
   - resources/forms
   - resources/css
   - resources/views
