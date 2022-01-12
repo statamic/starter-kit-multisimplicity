@@ -23,13 +23,13 @@ return [
 
         'de' => [
             'name' => 'Die Flucht',
-            'locale' => 'en_US',
+            'locale' => 'de_DE',
             'url' => '/de/',
         ],
 
         'fr' => [
             'name' => "L'Escapade",
-            'locale' => 'en_US',
+            'locale' => 'fr_FR',
             'url' => '/fr/',
         ],
 
