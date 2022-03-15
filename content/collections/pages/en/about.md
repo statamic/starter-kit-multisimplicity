@@ -71,4 +71,4 @@ meta_description: 'The Getaway is a secluded, 10 acre estate a few miles west of
 ---
 The Getaway is a secluded, 10 acre estate a few miles west of Cair Paravel and just a stone's throw from the Great River. It has enjoyed a storied past in this cradle of Narnian culture as a place Lucy Pevency _almost_ visited and the Tumnus family _almost_ purchased.
 
-Originally built as a priviate fish camp of a dwarven family, it later became a B&B, and to this day has remained a destination for honeymooners and adventures wanting to visit the Lamp Post, hunt the White Stag, and search for the fabled entrance to Spare Oom.
+Originally built as a private fish camp of a dwarven family, it later became a B&B, and to this day has remained a destination for honeymooners and adventures wanting to visit the Lamp Post, hunt the White Stag, and search for the fabled entrance to Spare Oom.
