@@ -10,9 +10,9 @@ export_paths:
   - resources/css
   - resources/views
   - public/assets
-  - public/css
+  - public/build
   - package.json
   - tailwind.config.js
-  - webpack.mix.js
+  - vite.config.js
   - .env.example
   - README.md

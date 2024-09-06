@@ -1,6 +1,7 @@
 <!-- statamic:hide -->
 # Multisimplicity
-> A Multilingual focused Starter Kit for Statamic 3
+> A Multilingual focused Starter Kit for Statamic
+
 <!-- /statamic:hide -->
 
 ## Overview
@@ -23,7 +24,7 @@ A few notes on how the site is built.
 - [SEO Pro](https://statamic.com/addons/statamic/seo-pro) support with basic meta and Open Graph fallbacks.
 ### Frontend Build Details
 
-- Built with [TailwindCSS 3](https://tailwindcss.com) with pre-Purged CSS for 11kb of production CSS (make sure to recompile with `npm run dev/production` if you change the markup)
+- Built with [TailwindCSS 3](https://tailwindcss.com) with pre-Purged CSS for 11kb of production CSS (make sure to recompile with `npm run dev/build` if you change the markup)
 - Full [static site](https://github.com/statamic/ssg) support
 - Multi-site with completely shared views for simplicity
 - Only JavaScript is the Bard gallery that links to full-sized images with an [Alpine.js](https://alpinejs.dev) powered lightbox. It uses yield/section tags to push the CDN build into the html `<head>` from the `partials/_photo_gallery.antlers.html` partial.
