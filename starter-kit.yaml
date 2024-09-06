@@ -1,14 +1,14 @@
 export_paths:
   - content
-  - config/statamic/antlers.php
   - config/statamic/editions.php
-  - config/statamic/sites.php
   - config/statamic/ssg.php
+  - config/statamic/system.php
   - resources/blueprints
   - resources/fieldsets
   - resources/forms
   - resources/css
   - resources/views
+  - resources/sites.yaml
   - public/assets
   - public/build
   - package.json
