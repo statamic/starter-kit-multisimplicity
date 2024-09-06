@@ -14,5 +14,4 @@ export_paths:
   - package.json
   - tailwind.config.js
   - vite.config.js
-  - .env.example
   - README.md
