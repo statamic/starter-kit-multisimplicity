@@ -1,6 +1,6 @@
 <!-- statamic:hide -->
 # Multisimplicity
-> A Multilingual focused Starter Kit for Statamic 3.4+
+> A Multilingual focused Starter Kit for Statamic
 
 <!-- /statamic:hide -->
 
