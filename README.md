@@ -15,7 +15,7 @@ This kit is designed to be a starting (or learning) point for building simple an
 A few notes on how the site is built.
 
 - Header and Footer content is managed by Globals so it can be translated
-- Sites can be added and removed in `config/statamic/sites.php`. Learn more about the steps involved in [renaming or deleting sites](https://statamic.dev/multi-site#renaming-a-site).
+- Sites can be added and removed in `resources/sites.yaml`. Learn more about the steps involved in [renaming or deleting sites](https://statamic.dev/multi-site#renaming-a-site).
 - Page components are managed with [Bard](https://statamic.dev/fieldtypes/bard) sets. pre-built sets include:
     - Side-by-side image + text boxes that reverse order through the list
     - Photo gallery that links to full-sized images with an [Alpine.js](https://alpinejs.dev) powered lightbox.
