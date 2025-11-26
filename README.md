@@ -1,4 +1,6 @@
 <!-- statamic:hide -->
+<p align="center"><img src="https://statamic.com/assets/branding/squircle/statamic-mark-lime.svg" width="100" alt="Statamic Logo" /></p>
+
 # Multisimplicity
 > A Multilingual focused Starter Kit for Statamic
 
