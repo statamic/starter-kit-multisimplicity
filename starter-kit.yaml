@@ -12,6 +12,5 @@ export_paths:
   - public/assets
   - public/build
   - package.json
-  - tailwind.config.js
   - vite.config.js
   - README.md
