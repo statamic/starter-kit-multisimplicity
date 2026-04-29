@@ -1,11 +1,11 @@
 {
-  "resources/css/tailwind.css": {
-    "file": "assets/tailwind-lAUm_uw5.css",
-    "name": "tailwind",
+  "resources/css/site.css": {
+    "file": "assets/site-Ivt8h7Vy.css",
+    "name": "site",
     "names": [
-      "tailwind.css"
+      "site.css"
     ],
-    "src": "resources/css/tailwind.css",
+    "src": "resources/css/site.css",
     "isEntry": true
   }
 }
