@@ -1,3 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'BenchNine', serif;
+    --font-serif: 'Cormorant Garamond', serif;
+}
+
 .content, .content-lg {
     h2 {
         @apply text-4xl mb-8 font-bold italic;
