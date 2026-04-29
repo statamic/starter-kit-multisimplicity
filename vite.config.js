@@ -6,7 +6,6 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/tailwind.css',
-                'resources/js/site.js',
             ],
             refresh: true,
         }),
