@@ -1,0 +1,53 @@
+.content, .content-lg {
+    h2 {
+        @apply text-4xl mb-8 font-bold italic;
+    }
+
+    h3 {
+        @apply text-2xl mb-8 font-semibold italic;
+    }
+
+    h4 {
+        @apply text-xl mb-4 font-semibold italic;
+    }
+
+    p {
+        @apply italic text-2xl mb-8;
+    }
+
+    ul {
+        @apply list-disc ml-6 text-xl mb-8;
+        p {
+            @apply mb-0;
+        }
+    }
+
+    ol {
+        @apply list-decimal ml-6 text-xl mb-8;
+        p {
+            @apply mb-0;
+        }
+    }
+
+    img {
+        @apply border p-2 mb-8 max-w-full;
+    }
+}
+
+.content-lg {
+    p {
+        @apply text-3xl;
+    }
+}
+
+.button {
+    @apply px-6 py-2 bg-indigo-800 hover:bg-black font-sans uppercase text-lg font-bold tracking-wide text-white;
+}
+
+input, textarea {
+    @apply w-full border p-1;
+}
+
+[x-cloak] {
+    display: none;
+}
